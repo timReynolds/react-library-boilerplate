@@ -1,0 +1,64 @@
+{
+  "name": "library-boilerplate",
+  "version": "1.0.0",
+  "description": "library-boilerplate-description",
+  "main": "lib/index.js",
+  "scripts": {
+    "clean": "rimraf lib dist coverage",
+    "build": "babel src --out-dir lib --ignore __tests__",
+    "build:umd": "webpack src/index.js dist/library-boilerplate.js && NODE_ENV=production webpack src/index.js dist/library-boilerplate.min.js",
+    "lint": "eslint src examples",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
+    "prepublish": "npm run lint && npm run test && npm run clean && npm run build && npm run build:umd"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/library-boilerplate-author/library-boilerplate.git"
+  },
+  "keywords": [
+    "library-boilerplate-keywords"
+  ],
+  "author": "library-boilerplate-author",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/library-boilerplate-author/library-boilerplate/issues"
+  },
+  "homepage": "https://github.com/library-boilerplate-author/library-boilerplate",
+  "devDependencies": {
+    "babel-cli": "^6.4.5",
+    "babel-core": "^6.4.5",
+    "babel-jest": "^6.0.1",
+    "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "enzyme": "^1.4.0",
+    "eslint": "^1.10.3",
+    "eslint-config-airbnb": "^3.1.0",
+    "eslint-plugin-react": "^3.15.0",
+    "react-addons-test-utils": "^0.14.6",
+    "react-dom": "^0.14.6",
+    "rimraf": "^2.5.0",
+    "webpack": "^1.12.11",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "invariant": "^2.0.0",
+    "react": "^0.14.6"
+  },
+  "jest": {
+    "scriptPreprocessor": "<rootDir>/jest/preprocessor.js",
+    "testRunner": "<rootDir>/node_modules/jest-cli/src/testRunners/jasmine/jasmine2.js",
+    "unmockedModulePathPatterns": [
+      "react",
+      "fbjs",
+      "react-dom",
+      "react-addons-test-utils",
+      "enzyme",
+      "cheerio",
+      "htmlparser2",
+      "sinon"
+    ]
+  }
+}

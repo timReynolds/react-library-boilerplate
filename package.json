@@ -29,6 +29,7 @@
   "devDependencies": {
     "babel-cli": "^6.4.5",
     "babel-core": "^6.4.5",
+    "babel-jest": "^9.0.0",
     "babel-loader": "^6.2.1",
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
@@ -36,7 +37,7 @@
     "eslint": "^2.3.0",
     "eslint-config-airbnb": "^6.0.2",
     "eslint-plugin-react": "^4.1.0",
-    "jest-cli": "^0.9.0",
+    "jest-cli": "^0.8.2",
     "react-addons-test-utils": "^0.14.6",
     "react-dom": "^0.14.6",
     "rimraf": "^2.5.0",
@@ -44,7 +45,6 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
-    "fbjs": "^0.8.0-alpha.3",
     "invariant": "^2.0.0",
     "react": "^0.14.6"
   },
@@ -53,13 +53,9 @@
     "testRunner": "<rootDir>/node_modules/jest-cli/src/testRunners/jasmine/jasmine2.js",
     "unmockedModulePathPatterns": [
       "react",
-      "fbjs",
       "react-dom",
       "react-addons-test-utils",
-      "enzyme",
-      "cheerio",
-      "htmlparser2",
-      "sinon"
+      "enzyme"
     ]
   }
 }

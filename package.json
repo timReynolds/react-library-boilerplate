@@ -8,9 +8,9 @@
     "build": "babel src --out-dir lib --ignore __tests__",
     "build:umd": "webpack src/index.js dist/library-boilerplate.js && NODE_ENV=production webpack src/index.js dist/library-boilerplate.min.js",
     "lint": "eslint src examples",
-    "test": "./node_modules/.bin/jest",
-    "test:watch": "./node_modules/.bin/jest --watch",
-    "test:cov": "./node_modules/.bin/jest --coverage",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:cov": "jest --coverage",
     "prepublish": "npm run lint && npm run test && npm run clean && npm run build && npm run build:umd"
   },
   "repository": {
@@ -36,6 +36,7 @@
     "eslint": "^2.3.0",
     "eslint-config-airbnb": "^6.0.2",
     "eslint-plugin-react": "^4.1.0",
+    "jest-cli": "^0.9.0",
     "react-addons-test-utils": "^0.14.6",
     "react-dom": "^0.14.6",
     "rimraf": "^2.5.0",

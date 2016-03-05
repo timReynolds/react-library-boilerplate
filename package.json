@@ -44,6 +44,7 @@
     "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
+    "fbjs": "^0.8.0-alpha.3",
     "invariant": "^2.0.0",
     "react": "^0.14.6"
   },

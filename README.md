@@ -2,8 +2,9 @@ library-boilerplate
 =========================
 
 [![Dependency Status](https://david-dm.org/timreynolds/react-library-boilerplate.svg)](https://david-dm.org/timreynolds/react-library-boilerplate)
-
 [![devDependency Status](https://david-dm.org/timreynolds/react-library-boilerplate/dev-status.svg)](https://david-dm.org/timreynolds/react-library-boilerplate#info=devDependencies)
+[![Build Status](https://travis-ci.org/timReynolds/react-library-boilerplate.svg?branch=master)](https://travis-ci.org/timReynolds/react-library-boilerplate)
+[![Coverage Status](https://coveralls.io/repos/github/timReynolds/react-library-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/timReynolds/react-library-boilerplate?branch=master)
 
 An opinionated setup for react libraries with CommonJS and UMD builds via Babel
 and Webpack alongside ESLint with Jest and Enzyme for testing. A simple example

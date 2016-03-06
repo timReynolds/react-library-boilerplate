@@ -50,8 +50,6 @@
     "react": "^0.14.6"
   },
   "jest": {
-    "scriptPreprocessor": "<rootDir>/jest/preprocessor.js",
-    "testRunner": "<rootDir>/node_modules/jest-cli/src/testRunners/jasmine/jasmine2.js",
     "unmockedModulePathPatterns": [
       "react",
       "react-dom",
